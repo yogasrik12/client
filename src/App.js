@@ -11,7 +11,7 @@ function App() {
   const mic = new SpeechRecognition();
 
   useEffect(() => {
-    // Load chat history on startup
+
     axios.get('http://localhost:5000/api/conversation/history')
       .then(res => setMessages(res.data));
   }, []);
