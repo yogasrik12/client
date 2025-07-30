@@ -1,44 +1,63 @@
 .app-container {
   font-family: 'Segoe UI', sans-serif;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
   text-align: center;
-  background-color: #f8f8f8;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 20px;
+  padding: 12px 24px;
+  margin: 20px 10px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: #1976d2;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #1565c0;
 }
 
 .chat-history {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 30px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 .message {
-  padding: 8px;
-  margin: 5px 0;
-  border-radius: 6px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-size: 15px;
+  word-wrap: break-word;
 }
 
 .message.user {
-  background-color: #e0f7fa;
+  background-color: #e3f2fd; /* soft blue */
+  align-self: flex-end;
 }
 
 .message.assistant {
-  background-color: #fff9c4;
+  background-color: #f3e5f5; /* soft purple */
+  align-self: flex-start;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
